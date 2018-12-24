@@ -1,0 +1,119 @@
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joan.brainallydiary.Pantalla_Calendari_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_calendari_dia"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_calendari_dia_data" />
+
+    <Button
+        android:id="@+id/btn_calendari_dia_emocio"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Emoció puntual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_calendari_dia_activitat" />
+
+    <Button
+        android:id="@+id/btn_calendari_dia_activitat"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Nova Activitat"
+        app:layout_constraintStart_toEndOf="@+id/btn_calendari_dia_emocio"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_calendari_dia" />
+
+    <Button
+        android:id="@+id/btn_calendari_dia_medicina"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Nova Medicina"
+        app:layout_constraintStart_toEndOf="@+id/btn_calendari_dia_activitat"
+        app:layout_constraintTop_toTopOf="@+id/btn_calendari_dia_activitat" />
+
+    <Spinner
+        android:id="@+id/spn_calendari_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="424dp"
+        android:layout_marginEnd="124dp"
+        android:gravity="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_calendari_dia_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:text="data_seleccionada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_calendari_dia" />
+
+    <ImageView
+        android:id="@+id/img_calendari_dia_dreta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_calendari_dia_data"
+        app:layout_constraintStart_toEndOf="@+id/txt_calendari_dia_data"
+        app:layout_constraintTop_toTopOf="@+id/txt_calendari_dia_data"
+        app:layout_constraintVertical_bias="0.384"
+        app:srcCompat="@drawable/ic_arrow_dreta" />
+
+    <ImageView
+        android:id="@+id/img_calendari_dia_esquerra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_calendari_dia_data"
+        app:layout_constraintEnd_toStartOf="@+id/txt_calendari_dia_data"
+        app:layout_constraintTop_toTopOf="@+id/txt_calendari_dia_data"
+        app:layout_constraintVertical_bias="0.619"
+        app:srcCompat="@drawable/ic_arrow_esquerra" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup_Filtre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spn_calendari_dia">
+
+        <RadioButton
+            android:id="@+id/radiobutton_calendari_dia_tot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tot"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_calendari_dia_medicina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Medicines"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

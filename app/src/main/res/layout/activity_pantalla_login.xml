@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.joan.brainallydiary.Pantalla_Login_Activity">
+
+    <EditText
+        android:id="@+id/txt_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/txt_login_usuari_email"
+        android:layout_alignTop="@+id/txt_login_usuari_email"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Contrasenya"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/txt_login_usuari_email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_login_usuari_email" />
+
+    <Button
+        android:id="@+id/btn_login_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_login_password"
+        android:layout_below="@+id/txt_login_password"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/btn_Entrar"
+        app:layout_constraintStart_toStartOf="@+id/txt_login_password"
+        app:layout_constraintTop_toBottomOf="@+id/txt_login_password" />
+
+    <Button
+        android:id="@+id/btn_login_registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_login_entrar"
+        android:layout_below="@+id/txt_login_usuari_email"
+        android:layout_marginTop="72dp"
+        android:text="@string/btn_Registrar"
+        app:layout_constraintStart_toStartOf="@+id/btn_login_entrar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_entrar" />
+
+    <EditText
+        android:id="@+id/txt_login_usuari_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="@string/Usuari_Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

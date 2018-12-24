@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.joan.brainallydiary">
+
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo_simple"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_logo_simple"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pantalla_Perfil_Usuari_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_perfil_usuari" />
+        <activity
+            android:name=".Pantalla_Estadistiques_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_estadistiques"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Pantalla_Trofeus_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_trofeus"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Pantalla_Perfils_Infants_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_perfils_infants"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Pantalla_Perfils_Companys_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_perfils_companys"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Pantalla_Configuracio_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_configuracio"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Classe_Perfil_Infant"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Pantalla_Login_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_login" />
+        <activity
+            android:name=".Pantalla_Registrar_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_registrar" />
+        <activity
+            android:name=".Pantalla_Config_Perfil_Usuari_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_config_perfil_usuari" />
+        <activity
+            android:name=".Pantalla_Perfils_Infants_Registrar1"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_perfils_infants_registrar" />
+        <activity
+            android:name=".Pantalla_Perfils_Infants_Registrar2"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_perfils_infants_registrar" />
+        <activity
+            android:name=".Pantalla_Compartir_Infant_Activity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Pantalla_Perfils_Infants_Activity" />
+        <activity
+            android:name=".Pantalla_Nova_Activitat_Activity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Pantalla_Nova_Medicina_Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/pantalla_nova_medicina" />
+
+        <receiver
+            android:name=".AlertReceiver" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joan.brainallydiary.Pantalla_Config_Perfil_Usuari_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_cp_Cognoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/Cognoms"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/txt_cp_Nom"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cp_Nom" />
+
+            <EditText
+                android:id="@+id/txt_cp_CodiPostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="@string/Codi_Postal"
+                android:inputType="number"
+                app:layout_constraintStart_toStartOf="@+id/txt_cp_Pais"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cp_Pais" />
+
+            <Button
+                android:id="@+id/btn_cp_Guardar"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/btn_Guardar"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cp_CodiPostal" />
+
+            <TextView
+                android:id="@+id/txt_cp_DataNeixament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/Data_Neixament"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/txt_cp_Cognoms"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cp_Cognoms" />
+
+            <EditText
+                android:id="@+id/txt_cp_Pais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="@string/Pais"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/spn_cp_Genere"
+                app:layout_constraintTop_toBottomOf="@+id/spn_cp_Genere" />
+
+            <Spinner
+                android:id="@+id/spn_cp_Genere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toStartOf="@+id/txt_cp_DataNeixament"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cp_DataNeixament" />
+
+            <EditText
+                android:id="@+id/txt_cp_Nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="@string/Nom"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

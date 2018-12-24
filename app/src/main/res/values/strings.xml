@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">BrainAllyDiary</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_actualitzar">Actualitzar BD Local</string>
+
+    //Strings per l'AndroidManifest.xml i activity_main_drawer.xml: Noms de les pantalles i Menu
+    desplegable
+    <string name="pantalla_perfil_usuari">Perfil</string>
+    <string name="pantalla_calendari">Calendari</string>
+    <string name="pantalla_estadistiques">Estadístiques</string>
+    <string name="pantalla_trofeus">Trofeus</string>
+    <string name="pantalla_perfils_infants">Perfils Infants</string>
+    <string name="pantalla_perfils_companys">Perfils Companys</string>
+    <string name="pantalla_configuracio">Configuració</string>
+    <string name="tancar_sessio">Tancar Sessió</string>
+
+    <string name="pantalla_login">Login</string>
+    <string name="pantalla_registrar">Registrar-se</string>
+    <string name="pantalla_config_perfil_usuari">Configuració: Perfil Usuari</string>
+    <string name="pantalla_perfils_infants_registrar">Configuració: Perfil Infant</string>
+    <string name="pantalla_nova_activitat">Activitat</string>
+    <string name="pantalla_nova_medicina">Medicina</string>
+
+    //Strings pel XML Pantalla Login i Pantalla Registrar
+    <string name="Usuari_Email">Usuari o Email</string>
+    <string name="Contrasenya">Contrasenya</string>
+    <string name="btn_Entrar">Entrar</string>
+    <string name="btn_Registrar">Registrar-se</string>
+    <string name="Usuari">Usuari</string>
+    <string name="Email">Email</string>
+    <string name="Repeteix_Contrasenya">Repeteix la contrasenya</string>
+
+    //Strings pel XML Pantalla Configuració Perfil Usuari
+    <string name="Nom">Nom</string>
+    <string name="Cognoms">Cognoms</string>
+    <string name="Data_Neixament">Data de Naixement</string>
+    <string name="Pais">Pais</string>
+    <string name="Codi_Postal">Codi Postal</string>
+    <string name="btn_Guardar">Guardar</string>
+
+    //Strings pel XML Pantalla Perfils Infants
+    <string name="btn_Nou_Perfil_Infant">Nou perfil infant</string>
+
+    //Strings pel XML Pantalla Perfils Infants Registrar1
+    <string name="btn_Seguent">Següent</string>
+    <string name="Zona_Infant">Zona Infant</string>
+    <string name="Zona_Adult">Zona Adult</string>
+
+    //Strings pel XML Pantalla Perfils Infants Registrar2
+    <string name="Dades_Mediques">Dades Mèdiques</string>
+    <string name="Trastorn_Principal">Trastorn Principal</string>
+
+</resources>

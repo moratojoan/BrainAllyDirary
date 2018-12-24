@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joan.brainallydiary.Pantalla_Perfils_Infants_Registrar1">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/Zona_Infant"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spn_cpi_Genere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/txt_cpi_DataNeixament"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cpi_DataNeixament" />
+
+            <EditText
+                android:id="@+id/txt_cpi_CodiPostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/Codi_Postal"
+                android:inputType="number"
+                app:layout_constraintStart_toStartOf="@+id/txt_cpi_Pais"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cpi_Pais" />
+
+            <EditText
+                android:id="@+id/txt_cpi_Nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/Nom"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/txt_cpi_DataNeixament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/Data_Neixament"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/txt_cpi_Cognoms"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cpi_Cognoms" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/Zona_Adult"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cpi_CodiPostal" />
+
+            <EditText
+                android:id="@+id/txt_cpi_Pais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/Pais"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/spn_cpi_Genere"
+                app:layout_constraintTop_toBottomOf="@+id/spn_cpi_Genere" />
+
+            <Spinner
+                android:id="@+id/spn_cpi_RelacioUI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <EditText
+                android:id="@+id/txt_cpi_Cognoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/Cognoms"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/txt_cpi_Nom"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cpi_Nom" />
+
+            <Button
+                android:id="@+id/btn_cpi_Seguent"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/btn_Seguent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spn_cpi_RelacioUI" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

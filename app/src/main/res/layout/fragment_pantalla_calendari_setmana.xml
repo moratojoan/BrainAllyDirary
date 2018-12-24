@@ -1,0 +1,88 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joan.brainallydiary.Pantalla_Calendari_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Spinner
+        android:id="@+id/spn_calendari_setmana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginBottom="428dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_calendari_setmana_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="dilluns - diumenge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_calendari_setmana" />
+
+    <ImageView
+        android:id="@+id/img_calendari_setmana_dreta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_arrow_dreta"
+        app:layout_constraintStart_toEndOf="@+id/txt_calendari_setmana_data"
+        app:layout_constraintTop_toBottomOf="@+id/spn_calendari_setmana" />
+
+    <ImageView
+        android:id="@+id/img_calendari_setmana_esquerra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_arrow_esquerra"
+        app:layout_constraintEnd_toStartOf="@+id/txt_calendari_setmana_data"
+        app:layout_constraintTop_toTopOf="@+id/img_calendari_setmana_dreta" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_calendari_setmana"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_calendari_setmana_data" />
+
+    <Button
+        android:id="@+id/btn_calendari_setmana_emocio"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Emoció puntual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_calendari_setmana_activitat" />
+
+    <Button
+        android:id="@+id/btn_calendari_setmana_activitat"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Nova Activitat"
+        app:layout_constraintStart_toEndOf="@+id/btn_calendari_setmana_emocio"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_calendari_setmana" />
+
+    <Button
+        android:id="@+id/btn_calendari_setmana_medicina"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Nova Medicina"
+        app:layout_constraintStart_toEndOf="@+id/btn_calendari_setmana_activitat"
+        app:layout_constraintTop_toTopOf="@+id/btn_calendari_setmana_activitat" />
+</android.support.constraint.ConstraintLayout>

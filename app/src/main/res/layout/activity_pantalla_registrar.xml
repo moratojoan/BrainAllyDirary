@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joan.brainallydiary.Pantalla_Registrar_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/txt_reg_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="@string/Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintStart_toStartOf="@+id/txt_reg_usuari"
+                app:layout_constraintTop_toBottomOf="@+id/txt_reg_usuari" />
+
+            <EditText
+                android:id="@+id/txt_reg_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:ems="10"
+                android:hint="@string/Contrasenya"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toStartOf="@+id/txt_reg_email"
+                app:layout_constraintTop_toBottomOf="@+id/txt_reg_email" />
+
+            <Button
+                android:id="@+id/btn_reg_registrar"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="64dp"
+                android:text="@string/btn_Registrar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_reg_password2" />
+
+            <TextView
+                android:id="@+id/txt_reg_error_usuari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aquest Usuari no està disponible"
+                android:textColor="#fb1d1d"
+                app:layout_constraintStart_toStartOf="@+id/txt_reg_usuari"
+                app:layout_constraintTop_toBottomOf="@+id/txt_reg_usuari" />
+
+            <EditText
+                android:id="@+id/txt_reg_password2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="@string/Repeteix_Contrasenya"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toStartOf="@+id/txt_reg_password"
+                app:layout_constraintTop_toBottomOf="@+id/txt_reg_password" />
+
+            <EditText
+                android:id="@+id/txt_reg_usuari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:hint="@string/Usuari"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/txt_reg_email"
+                app:layout_constraintTop_toBottomOf="@+id/txt_reg_email">
+
+                <TextView
+                    android:id="@+id/txt_reg_error_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aquest Email no està disponible"
+                    android:textColor="#fb1d1d"
+                    app:layout_constraintStart_toStartOf="@+id/txt_reg_email"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_reg_email" />
+
+                <TextView
+                    android:id="@+id/txt_reg_error_email2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cal escriure un Email vàlid. \nFormat: email@email.com"
+                    android:textColor="#fb1d1d" />
+            </FrameLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

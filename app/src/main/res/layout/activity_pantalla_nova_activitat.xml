@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pantalla_Nova_Activitat_Activity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="64dp"
+        android:text="Infant:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spn_activitat_infants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Activitat:"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Spinner
+        android:id="@+id/spn_activitat_activitats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/spn_activitat_infants" />
+
+    <TextView
+        android:id="@+id/txt_activitat_DI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
+        android:text="Data Inicial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_activitat_informació" />
+
+    <TextView
+        android:id="@+id/txt_activitat_DF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Data Final"
+        app:layout_constraintStart_toStartOf="@+id/txt_activitat_DI"
+        app:layout_constraintTop_toBottomOf="@+id/txt_activitat_DI" />
+
+    <TextView
+        android:id="@+id/txt_activitat_HI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:text="Hora Inicial"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_activitat_DI"
+        app:layout_constraintStart_toEndOf="@+id/txt_activitat_DI" />
+
+    <TextView
+        android:id="@+id/txt_activitat_HF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora Final"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_activitat_DF"
+        app:layout_constraintStart_toStartOf="@+id/txt_activitat_HI" />
+
+    <Button
+        android:id="@+id/btn_activitat_Guardar"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/btn_Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_emocio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Emoció:"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/txt_activitat_informació"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="L'activitat ja ha acabat! Pots introduir l'emoció!"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_emocio">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_activitat_0"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="1dp"
+            app:layout_constraintEnd_toStartOf="@+id/card_activitat_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_emocio">
+
+            <ImageView
+                android:id="@+id/img_plorant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/a0plorant" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_activitat_1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="1dp"
+            app:layout_constraintStart_toEndOf="@+id/card_activitat_0"
+            app:layout_constraintTop_toTopOf="@+id/card_activitat_0">
+
+            <ImageView
+                android:id="@+id/img_trist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/a1trist" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_activitat_2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="1dp"
+            app:layout_constraintEnd_toStartOf="@+id/card_activitat_3"
+            app:layout_constraintStart_toEndOf="@+id/card_activitat_1"
+            app:layout_constraintTop_toTopOf="@+id/card_activitat_0">
+
+            <ImageView
+                android:id="@+id/img_neutre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/a2neutre" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_activitat_3"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="1dp"
+            app:layout_constraintEnd_toStartOf="@+id/card_activitat_4"
+            app:layout_constraintStart_toEndOf="@+id/card_activitat_2"
+            app:layout_constraintTop_toTopOf="@+id/card_activitat_0">
+
+            <ImageView
+                android:id="@+id/img_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/a3content" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_activitat_4"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_activitat_3"
+            app:layout_constraintTop_toTopOf="@+id/card_activitat_0">
+
+            <ImageView
+                android:id="@+id/img_super"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/a4genial" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

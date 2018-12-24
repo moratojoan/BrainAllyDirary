@@ -1,0 +1,60 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joan.brainallydiary.Pantalla_Calendari_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Spinner
+        android:id="@+id/spn_calendari_mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginBottom="428dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calenarview_calendari_mes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:firstDayOfWeek="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_calendari_mes" />
+
+    <Button
+        android:id="@+id/btn_calendari_mes_activitat"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Nova Activitat"
+        app:layout_constraintStart_toEndOf="@+id/btn_calendari_mes_emocio"
+        app:layout_constraintTop_toBottomOf="@+id/calenarview_calendari_mes" />
+
+    <Button
+        android:id="@+id/btn_calendari_mes_emocio"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Emoció puntual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_calendari_mes_activitat" />
+
+    <Button
+        android:id="@+id/btn_calendari_mes_medicina"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Nova Medicina"
+        app:layout_constraintStart_toEndOf="@+id/btn_calendari_mes_activitat"
+        app:layout_constraintTop_toTopOf="@+id/btn_calendari_mes_activitat" />
+</android.support.constraint.ConstraintLayout>

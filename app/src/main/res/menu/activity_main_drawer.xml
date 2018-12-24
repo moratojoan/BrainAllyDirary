@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/pantalla_perfil_usuari"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/pantalla_perfil_usuari" />
+        <item
+            android:id="@+id/pantalla_calendari"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/pantalla_calendari" />
+        <item
+            android:id="@+id/pantalla_estadistiques"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/pantalla_estadistiques" />
+        <item
+            android:id="@+id/pantalla_trofeus"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/pantalla_trofeus" />
+        <item
+            android:id="@+id/pantalla_perfils_infants"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/pantalla_perfils_infants" />
+        <item
+            android:id="@+id/pantalla_perfils_companys"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/pantalla_perfils_companys" />
+    </group>
+
+    <item android:title="@string/pantalla_configuracio">
+        <menu>
+            <item
+                android:id="@+id/pantalla_configuració"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/pantalla_configuracio" />
+            <item
+                android:id="@+id/tancar_sessio"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/tancar_sessio" />
+        </menu>
+    </item>
+
+</menu>
